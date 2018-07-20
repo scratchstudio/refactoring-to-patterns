@@ -7,6 +7,10 @@ import replace_constructors_with_creation_methods.before.CapitalStrategyTermLoan
 
 import java.util.Date;
 
+/**
+ * 객체를 생성하는 표준 방법을 사용하지는 않지만
+ * {@link replace_constructors_with_creation_methods.before.Loan} 의 생성자보다 용도를 명확히 드러낼 수 있게 됨.
+ */
 public class Loan {
     private double commitment;
     private double outstanding;
@@ -15,10 +19,6 @@ public class Loan {
     private Date expiry;
     private CapitalStrategy capitalStrategy;
 
-    /**
-     * 객체를 생성하는 표준 방법을 사용하지는 않지만
-     * 용도를 생성자보다 명확히 드러낼 수 있게 됨.
-     */
     public static Loan createTermLoan(double commitment, int riskRating, Date maturity) {
         return new Loan(new CapitalStrategyTermLoan(), commitment, 0.0, riskRating, maturity, null);
     }
