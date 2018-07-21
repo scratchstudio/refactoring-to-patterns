@@ -4,6 +4,9 @@ import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
 
+/**
+ * {@link Loan#capital()} 메서드 내에서 조건문을 통해 여러 개의 서로 다른 로직 가운데 어떤 것을 실행할지 선택하고 있음..
+ */
 public class Loan {
     private static final long MILLIS_PER_DAY = 86400000;
     private static final long DAYS_PER_YEAR = 365;

@@ -4,14 +4,14 @@ import replace_conditional_logic_with_strategy.before.RiskFactor;
 
 import java.util.Date;
 
+/**
+ * {@link replace_conditional_logic_with_strategy.before.Loan#capital()} 의 if-else 문이 모두 사라지고,
+ * 각각의 하위 클래스들이 capital 계산 로직을 구현한다
+ */
 public abstract class CapitalStrategy {
     private static final long MILLIS_PER_DAY = 86400000;
     private static final long DAYS_PER_YEAR = 365;
 
-    /**
-     * if-else 문이 모두 사라지고,
-     * 각각의 구현체가 capital 계산 로직을 구현한다
-     */
     public abstract double capital(Loan loan);
 
     double riskFactorFor(Loan loan) {
