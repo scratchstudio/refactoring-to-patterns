@@ -8,7 +8,7 @@
 | Move Creation Knowledge to Factory                           |                                                              |
 | [Encapsulate Classes with Factory](https://github.com/iamkyu/refactoring-to-patterns/blob/master/src/main/java/encapsulate_classes_with_factory) | 클라이언트가 한 패키지 내의, 공통 인터페이스를 가지는 클래스들의 인스턴스를 직접 생성하고 있다면, 그 클래스의 생성자를 클라이언트가 직접 볼 수 없게 하고 팩터리를 통해 그 인스턴스를 얻도록 함. |
 | [Introduce Polymorphic Creation with Factory Method](https://github.com/iamkyu/refactoring-to-patterns/blob/master/src/main/java/introduce_polymorphic_creation_with_factory_method) | 한 상속 구조 내의 클래스들이 어떤 메서드를 각자 구현하는데 객체 생성 단계만 제외하고 나머지가 서로 유사하다면, 그 메서드를 수퍼 클래스로 옮기고 객체 생성은 팩터리 메서드에 맡김. |
-| Encapsulate Composite with Builder                           |                                                              |
+| [Encapsulate Composite with Builder](https://github.com/iamkyu/refactoring-to-patterns/blob/master/src/main/java/encapsulate_composite_with_builder) | 컴포짓 구조를 생성하는 과정이 반복적으로 수행되고 복잡하다면 그 세부 사항을 처리하는 별도의 빌더를 제공하여 컴포짓 구조를 쉽게 생성할 수 있게 함. |
 | Inline Singleton                                             |                                                              |
 | [Compose Method](https://github.com/iamkyu/refactoring-to-patterns/blob/master/src/main/java/compose_method) | 어떤 메서드의 내부 로직이 한 눈에 이해하기 어렵다면, 그 로직을 의도가 잘 드러내는 동등한 수준의 작업을 하는 여러 단계로 나눔. |
 | [Replace Conditional Logic with Strategy](https://github.com/iamkyu/refactoring-to-patterns/blob/master/src/main/java/replace_conditional_logic_with_strategy) | 메서드 내의 조건문을 통해 여러 개의 서로 다른 로직 가운데 어떤 것을 실행할지 선택하고 있다면, 각 로직에 해당하는 스트레티지 클래스를 만들고 각 스트레티지 인스턴스에 로직을 위임. |
