@@ -26,7 +26,7 @@
 | Replace Type Code with Class                                 |                                                              |
 | Limit Instantiation with Singleton                           |                                                              |
 | Introduce Null Object                                        |                                                              |
-| Move Accumulation to Collecting Parameter                    |                                                              |
+| [Move Accumulation to Collecting Parameter](https://github.com/iamkyu/refactoring-to-patterns/tree/master/src/main/java/move_accumulation_to_collecting_parameter) | 지역 변수에 정보를 축적하는 매우 긴 메서드를 분해하고 각 메서드에 수집 파라미터를 넘겨 정보를 축적하도록 만듬. |
 | Move Accumulation to Visitor                                 |                                                              |
 | [Chain Constructor](https://github.com/iamkyu/refactoring-to-patterns/tree/master/src/main/java/chain_constructors) | 중복된 코드를 갖는 생성자가 여러 개 있다면, 생성자들이 서로 호출하게 함. |
 | Unify Interfaces                                             |                                                              |
